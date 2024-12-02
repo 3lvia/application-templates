@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<AssemblyName>{{cookiecutter.application_name_pascal_case}}</AssemblyName>
+		<RootNamespace>{{cookiecutter.application_name_pascal_case}}</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Elvia.Configuration" Version="2.0.6" />
+		<PackageReference Include="Elvia.Elvid.Bff.UserClient" Version="2.0.2" />
+	</ItemGroup>
+</Project>

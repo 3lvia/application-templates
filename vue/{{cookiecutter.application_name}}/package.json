@@ -1,0 +1,15 @@
+{
+  "name": "{{cookiecutter.application_name}}",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite serve",
+    "dev-build": "vite build --watch --mode dev --outDir bff/wwwroot --minify false --emptyOutDir false",
+    "build": "vue-tsc --noEmit && vite build"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
