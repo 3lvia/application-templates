@@ -32,8 +32,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         options.TokenValidationParameters.ValidateIssuer = false;
         options.MapInboundClaims = false;
     });
-var instrumentationKey = builder.Configuration.EnsureHasValue("{{cookiecutter.system_name}}:kv:appinsights:{{cookiecutter.system_name}}:instrumentation-key");
-builder.Services.AddStandardElviaTelemetryLogging(instrumentationKey, retainTelemetryWhere: telemetryItem =>
+var connectionString = builder.Configuration.EnsureHasValue("{{cookiecutter.system_name}}:kv:appinsights:{{cookiecutter.system_name}}:connection_string");
+builder.Services.AddStandardElviaTelemetryLogging(new AppInsightsConnectionString(connectionString), retainTelemetryWhere: telemetryItem =>
     telemetryItem switch
     {
         DependencyTelemetry d => false,
