@@ -1,0 +1,7 @@
+{
+    "application_name": "todo",
+    "system_name": "System",
+    "microservice_type": "Worker",
+    "application_name_pascal_case": "todo",
+    "base_dir": "./"
+}

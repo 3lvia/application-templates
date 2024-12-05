@@ -1,8 +1,8 @@
 {
     "application_name": "todo",
-    "application_name_pascal_case": "myVueApp",
+    "application_name_pascal_case": "todo",
     "system_name": "System",
-    "microservice_type": "webapp",
+    "microservice_type": "Worker",
     "bff_client_name": "alfaonly",
     "sub_domain_name": "myapp",
     "domain_path": "/api",

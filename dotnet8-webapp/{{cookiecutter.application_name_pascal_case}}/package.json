@@ -1,0 +1,30 @@
+{
+  "name": "{{cookiecutter.application_name}}",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite serve",
+    "dev-build": "vite build --watch --mode dev --outDir bff/wwwroot --minify false --emptyOutDir false",
+    "build": "vue-tsc --noEmit && vite build"
+  },
+  "dependencies": {
+    "@elvia/elvis": "^17.0.1",
+    "axios": "1.6.8",
+    "pinia": "2.1.7",
+    "vue": "3.4.21",
+    "vue-router": "4.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "5.0.4",
+    "@vue/eslint-config-prettier": "9.0.0",
+    "@vue/eslint-config-typescript": "13.0.0",
+    "eslint": "9.0.0",
+    "eslint-plugin-vue": "9.25.0",
+    "prettier": "3.2.5",
+    "sass": "1.75.0",
+    "typescript": "5.4.5",
+    "vite": "5.2.8",
+    "vue-tsc": "2.0.13"
+  }
+}

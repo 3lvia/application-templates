@@ -4,7 +4,7 @@
 
 name: {{cookiecutter.application_name}}
 namespace: {{cookiecutter.system_name}}
-microserviceType: webapp
+microserviceType: webapi
 replicaCount: 2
 
 resources:
