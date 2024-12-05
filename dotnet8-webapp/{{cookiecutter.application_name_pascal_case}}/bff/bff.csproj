@@ -10,6 +10,6 @@
 
 	<ItemGroup>
 		<PackageReference Include="Elvia.Configuration" Version="2.0.6" />
-		<PackageReference Include="Elvia.Elvid.Bff.UserClient" Version="2.0.2" />
+		<PackageReference Include="Elvia.Elvid.Bff.UserClient" Version="2.1.2" />
 	</ItemGroup>
 </Project>
