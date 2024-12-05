@@ -1,7 +1,7 @@
 ### STAGE 1: Build frontend ###
 
 # We label our stage as 'builder'
-FROM node:20-alpine as build-frontend
+FROM node:22-alpine as build-frontend
 
 ARG environment
 
