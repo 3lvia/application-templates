@@ -1,7 +1,6 @@
 {
-    "application_name": "todo",
-    "system_name": "System",
-    "microservice_type": "Worker",
-    "application_name_pascal_case": "todo",
+    "application_name": "my-app",
+    "application_name_pascal_case": "MyApp",
+    "system_name": "core",
     "base_dir": "./"
 }
