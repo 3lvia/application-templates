@@ -1,12 +1,17 @@
-# dotnet worker template
+# {{cookiecutter.application_name_pascal_case}}
 
-This is Elvias template for a dotnet worker. 
+This is Elvia's template for a .NET 8 worker service.
 
-Make sure to merge the PR created in https://github.com/3lvia/{{cookiecutter.system_name}}-terraform/pulls (and possibly https://github.com/3lvia/github-repositories-terraform/pulls).
+## Deployment
 
-Github actions is used for CI/CD, but only deployment to dev is enabled. 
+To deploy to Kubernetes, remember to create a Kubernetes service account for you application
+in your systems [Terraform repository](https://github.com/3lvia/{{cookiecutter.system_name}}-terraform).
+
+You also need to add your repository and/or system to [this repository](https://github.com/3lvia/github-repositories-terraform)
+to enable deployment from GitHub Actions.
 
 ## Run locally
-```
+
+```bash
 dotnet run
 ```
