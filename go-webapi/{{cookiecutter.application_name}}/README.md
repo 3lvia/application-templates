@@ -1,6 +1,6 @@
-# {{cookiecutter.application_name_pascal_case}}
+# {{cookiecutter.application_name}}
 
-This is Elvia's template for a .NET 8 web API.
+This is Elvia's template for a Go web API using [Gin](https://github.com/gin-gonic/gin).
 
 ## Deployment
 
@@ -13,5 +13,5 @@ to enable deployment from GitHub Actions.
 ## Running locally
 
 ```bash
-dotnet run
+go run .
 ```

@@ -10,7 +10,7 @@ in your systems [Terraform repository](https://github.com/3lvia/{{cookiecutter.s
 You also need to add your repository and/or system to [this repository](https://github.com/3lvia/github-repositories-terraform)
 to enable deployment from GitHub Actions.
 
-## Run locally
+## Running locally
 
 ```bash
 dotnet run
