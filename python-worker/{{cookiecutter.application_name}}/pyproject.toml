@@ -1,0 +1,7 @@
+[project]
+name = "{{cookiecutter.application_name}}"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">={{cookiecutter.python_version}}"
+dependencies = []
