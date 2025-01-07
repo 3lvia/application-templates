@@ -16,21 +16,29 @@ to enable deployment from GitHub Actions.
 
 ## Running locally
 
+Requires [uv](https://github.com/astral-sh/uv?tab=readme-ov-file#installation) to be installed.
+
 ```bash
 uv run fastapi dev
 ```
 
-### With Docker
+### In a container
 
-We supply a `compose.yml` file for running the application with Docker.
+Requires [Docker](https://docs.docker.com/get-docker) or [podman](https://podman.io/docs/installation) to be installed.
+
+We supply a `compose.yml` file for running the application in a container.
 However, you need to generate the actual `Dockerfile` yourself using [3lv](https://github.com/3lvia/cli).
 
 ```bash
 3lv build -s {{cookiecutter.system_name}} -f pyproject.toml --generate-only {{cookiecutter.application_name}}
 ```
 
-After doing this, you can run the application with Docker Compose:
+After doing this, you can run the application in a container using:
 
 ```bash
 docker compose up --build
+# or
+podman compose up --build
 ```
+
+Running in a container does **not** require uv to be installed.

@@ -14,6 +14,8 @@ to enable deployment from GitHub Actions.
 
 ## Running locally
 
+Requires [uv](https://github.com/astral-sh/uv?tab=readme-ov-file#installation) to be installed.
+
 ```bash
 uv run main.py
 ```
