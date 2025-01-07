@@ -1,7 +1,7 @@
 # {{cookiecutter.application_name}}
 
 This is Elvia's template for a [FastAPI](https://github.com/fastapi/fastapi) application
-manages as an [uv](https://github.com/astral-sh/uv) project.
+managed as a [uv](https://github.com/astral-sh/uv) project.
 
 Based on [uv-fastapi-example](https://github.com/astral-sh/uv-fastapi-example)
 and [uv-docker-example](https://github.com/astral-sh/uv-docker-example).
@@ -16,7 +16,20 @@ to enable deployment from GitHub Actions.
 
 ## Running locally
 
-Requires [Docker](https://docs.docker.com/engine/install).
+```bash
+uv run fastapi dev
+```
+
+### With Docker
+
+We supply a `compose.yml` file for running the application with Docker.
+However, you need to generate the actual `Dockerfile` yourself using [3lv](https://github.com/3lvia/cli).
+
+```bash
+3lv build -s {{cookiecutter.system_name}} -f pyproject.toml --generate-only {{cookiecutter.application_name}}
+```
+
+After doing this, you can run the application with Docker Compose:
 
 ```bash
 docker compose up --build

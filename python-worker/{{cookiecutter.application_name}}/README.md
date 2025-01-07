@@ -1,6 +1,6 @@
 # {{cookiecutter.application_name}}
 
-This is Elvia's template for a Python worker application managed as an [uv](https://github.com/astral-sh/uv) project.
+This is Elvia's template for a Python worker application managed as a [uv](https://github.com/astral-sh/uv) project.
 
 Based on [uv-docker-example](https://github.com/astral-sh/uv-docker-example).
 
@@ -14,8 +14,6 @@ to enable deployment from GitHub Actions.
 
 ## Running locally
 
-Requires [Docker](https://docs.docker.com/engine/install).
-
 ```bash
-docker compose up --build
+uv run main.py
 ```
