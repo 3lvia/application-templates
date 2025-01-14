@@ -1,0 +1,41 @@
+name: Create & build with 3lv
+
+on:
+  pull_request:
+    branches: [trunk]
+
+jobs:
+  create-build:
+    name: Create & build with 3lv
+    runs-on: elvia-runner
+    env:
+      PROJECT_NAME: 'my-cool-project'
+    strategy:
+      fail-fast: false
+      matrix:
+        template:
+          - dotnet8-webapi
+          - dotnet8-worker
+          - go-webapi
+          - python-webapi
+          - python-worker
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Install 3lv CLI
+      uses: 3lvia/cli/setup@trunk
+
+    - name: Create project
+      run: 3lv create -s core -a "$PROJECT_NAME" -t '${{ matrix.template }}' --non-interactive .
+
+    - name: Build project
+      run: |
+        # Convert to pascal case for .NET
+        if [[ '${{ matrix.template }}' == "dotnet"* ]]; then
+          cd $(echo "$PROJECT_NAME" | sed -r 's/(^|-)(.)/\U\2/g')
+        else
+          cd "$PROJECT_NAME"
+        fi
+
+        3lv build "$PROJECT_NAME"
