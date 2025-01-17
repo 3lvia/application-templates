@@ -1,4 +1,4 @@
-name: Create & build with 3lv
+name: Create & build
 
 on:
   pull_request:
@@ -12,7 +12,7 @@ on:
 
 jobs:
   create-build:
-    name: ''
+    name: Create & build
     runs-on: elvia-runner
     env:
       PROJECT_NAME: 'my-cool-project'
@@ -37,8 +37,8 @@ jobs:
 
     - name: Build project
       run: |
-        # Convert to pascal case for .NET
         if [[ '${{ matrix.template }}' == "dotnet"* ]]; then
+          # Convert to pascal case for .NET
           cd $(echo "$PROJECT_NAME" | sed -r 's/(^|-)(.)/\U\2/g')
         else
           cd "$PROJECT_NAME"
