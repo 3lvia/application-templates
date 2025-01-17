@@ -12,6 +12,7 @@ on:
 
 jobs:
   create-build:
+    name: ''
     runs-on: elvia-runner
     env:
       PROJECT_NAME: 'my-cool-project'
