@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="Elvia.Configuration" Version="4.0.1" />
-    <PackageReference Include="Elvia.Telemetry" Version="5.0.0" />
+    <PackageReference Include="Elvia.Telemetry" Version="5.0.1" />
   </ItemGroup>
 
 </Project>
