@@ -2,7 +2,7 @@ module {{cookiecutter.application_name}}
 
 go 1.24.9
 
-require github.com/gin-gonic/gin v1.11.0
+require github.com/gin-gonic/gin v1.12.0
 
 require (
 	github.com/bytedance/gopkg v0.1.3 // indirect
