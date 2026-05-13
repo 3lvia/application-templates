@@ -1,3 +1,9 @@
+# DEPRECATED - NO LONGER MAINTAINED
+
+Due to severe short-staffing, this repository is no longer maintainted.
+Feel free to un-archive and continue development in the future.
+The feature for using these templates with the Elvia CLI has been temporary removed.
+
 # application-templates
 
 Templates for creating new Elvia applications.
